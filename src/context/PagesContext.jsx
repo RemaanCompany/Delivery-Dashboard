@@ -6,27 +6,27 @@ export default function PagesContext({ children }) {
   const [pagesState, setPagesState] = useState({
     pages: [
       {
-        home: "Home",
+        pageName: "Home",
         icon: <i className="fa-solid fa-house"></i>,
       },
       {
-        users: "Users",
+        pageName: "Users",
         icon: <i className="fa-solid fa-users"></i>,
       },
       {
-        drivers: "Drivers",
+        pageName: "Drivers",
         icon: <i className="fa-solid fa-motorcycle"></i>,
       },
       {
-        locations: "Locations",
+        pageName: "Locations",
         icon: <i className="fa-solid fa-location-dot"></i>,
       },
       {
-        orders: "Orders",
+        pageName: "Orders",
         icon: <i className="fa-solid fa-box-archive"></i>,
       },
       {
-        finance: "Finance",
+        pageName: "Finance",
         icon: <i className="fa-solid fa-wallet"></i>,
       },
     ],
