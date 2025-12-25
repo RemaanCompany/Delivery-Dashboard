@@ -6,7 +6,7 @@ export default function PagesContext({ children }) {
   const [themesState, setThemesState] = useState({
     manColor: "#fff",
     secondColor: "#01245A",
-    thirdColor: "#eee",
+    thirdColor: "#6b6b6e",
   });
 
   const values = { themesState, setThemesState };
