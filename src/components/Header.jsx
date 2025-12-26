@@ -9,25 +9,22 @@ export default function Header({ titles }) {
     <div className="flex justify-between">
       <div className="grid">
         <h1
-          className={clsx(
-            `text-[25px] font-bold text-[${themes.themesState.secondColor}]`
-          )}
+          style={{ color: themes.themesState.secondColor }}
+          className={clsx(`text-[25px] font-bold`)}
         >
           {titles.title}
         </h1>
         <p
-          className={clsx(
-            `text-[15px] text-[${themes.themesState.thirdColor}] -mt-1`
-          )}
+          style={{ color: themes.themesState.thirdColor }}
+          className={clsx(`text-[15px] -mt-1`)}
         >
           {titles.subTitle}
         </p>
       </div>
       <div className="flex items-center gap-2">
         <i
-          className={clsx(
-            `fa-solid fa-bell text-[${themes.themesState.thirdColor}]`
-          )}
+          style={{ color: themes.themesState.thirdColor }}
+          className={clsx(`fa-solid fa-bell`)}
         ></i>
         <img
           className="rounded-full w-12 h-12 shadow-md p-1"
