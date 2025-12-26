@@ -1,3 +1,13 @@
+import Layout from "./layouts/Layout";
+import PagesContext from "./context/PagesContext";
+import Themes from "./context/Themes";
+
 export default function App() {
-  return <div>App</div>;
+  return (
+    <Themes>
+      <PagesContext>
+        <Layout />
+      </PagesContext>
+    </Themes>
+  );
 }
