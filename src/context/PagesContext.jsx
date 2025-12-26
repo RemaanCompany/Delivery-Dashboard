@@ -6,31 +6,31 @@ export default function PagesContext({ children }) {
   const [pagesState, setPagesState] = useState({
     pages: [
       {
-        pageName: "Home",
+        pageName: "home",
         icon: <i className="fa-solid fa-house"></i>,
       },
       {
-        pageName: "Users",
+        pageName: "users",
         icon: <i className="fa-solid fa-users"></i>,
       },
       {
-        pageName: "Drivers",
+        pageName: "drivers",
         icon: <i className="fa-solid fa-motorcycle"></i>,
       },
       {
-        pageName: "Locations",
+        pageName: "locations",
         icon: <i className="fa-solid fa-location-dot"></i>,
       },
       {
-        pageName: "Orders",
+        pageName: "orders",
         icon: <i className="fa-solid fa-box-archive"></i>,
       },
       {
-        pageName: "Finance",
+        pageName: "finance",
         icon: <i className="fa-solid fa-wallet"></i>,
       },
     ],
-    selected: "Home",
+    selected: window.location.pathname.split("/")[1] || "home",
   });
 
   const values = { pagesState, setPagesState };
