@@ -4,7 +4,7 @@ export const pagesContext = createContext();
 
 export default function PagesContext({ children }) {
   const [pagesState, setPagesState] = useState({
-    pages: [
+    operationsPages: [
       {
         pageName: "home",
         icon: <i className="fa-solid fa-house"></i>,
@@ -29,6 +29,13 @@ export default function PagesContext({ children }) {
         pageName: "finance",
         icon: <i className="fa-solid fa-wallet"></i>,
       },
+    ],
+    adminPages: [
+      { pageName: "financial", icon: <i className="fa-solid fa-wallet"></i> },
+      { pageName: "support Center", icon: <i class="fa-solid fa-headset"></i> },
+      { pageName: "notification", icon: <i class="fa-solid fa-bell"></i> },
+      { pageName: "admins", icon: <i class="fa-solid fa-user-shield"></i> },
+      { pageName: "settings", icon: <i class="fa-solid fa-gear"></i> },
     ],
     selected: window.location.pathname.split("/")[1] || "home",
   });
